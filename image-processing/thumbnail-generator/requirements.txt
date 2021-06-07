@@ -1,5 +1,0 @@
-fdk
-oci
-requests
-Pillow
-python-magic
