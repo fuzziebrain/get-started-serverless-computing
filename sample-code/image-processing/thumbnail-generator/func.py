@@ -89,8 +89,8 @@ def handler(ctx, data: io.BytesIO = None):
 
     # Retrieve the Function's configuration values that are accessed through the 
     # container's environment variables.
-    thumbnail_bucket_name = os.environ['output-bucket']
-    thumbnail_size_pixels = int(os.getenv('thumbnail-size-pixels'
+    thumbnail_bucket_name = os.environ['output_bucket']
+    thumbnail_size_pixels = int(os.getenv('thumbnail_size_pixels'
         , DEFAULT_THuMBNAIL_SIZE_PIXELS))
 
     logging.getLogger().debug('Target bucket: ' + thumbnail_bucket_name)
