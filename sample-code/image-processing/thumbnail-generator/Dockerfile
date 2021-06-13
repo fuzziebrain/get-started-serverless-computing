@@ -1,4 +1,4 @@
-FROM fnproject/python:3.7.1-dev as build-stage
+FROM fnproject/python:3.8-dev as build-stage
 
 ADD . /function
 WORKDIR /function
@@ -7,7 +7,7 @@ RUN pip3 install --target /python/  --no-cache --no-cache-dir -r requirements.tx
 
 RUN rm -rf ~/.cache/pip /tmp* requirements.txt func.yaml Dockerfile .venv
 
-FROM fnproject/python:3.7.1
+FROM fnproject/python:3.8
 
 RUN apt update -y && apt install -y libmagic1 && \
     rm -rf /var/lib/apt/lists/*
