@@ -3,9 +3,6 @@ import json
 import logging
 import oci.object_storage
 import os
-# import requests
-# import sys
-# import tempfile
 import magic
 
 from fdk import response
