@@ -1,0 +1,6 @@
+fdk
+oci
+wheel
+pillow
+pytesseract
+opencv-python
